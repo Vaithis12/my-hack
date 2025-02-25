@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 20%;
+}
+
+h1 {
+    font-size: 50px;
+    animation: flash 1s infinite alternate, glitch 0.3s infinite;
+}
+
+@keyframes flash {
+    from { color: red; }
+    to { color: white; }
+}
+
+@keyframes glitch {
+    0% { transform: translate(2px, 2px); }
+    50% { transform: translate(-2px, -2px); }
+    100% { transform: translate(2px, -2px); }
+}
+
+#message {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#loading {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
